@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Oswald&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-fontsmoothing: grayscale;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+body {
+    height: 100vh;
+    background: rgb(139, 50, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculadora {
+    width: 356px;
+    height: 566px;
+    border-radius: 48px;
+    background: rgb(23, 22, 22);
+}
+
+#tela {
+    margin: 54px;
+    padding-inline: 54px;
+}
+
+#ult-calculo {
+    text-align: right;
+    font-size: 20px;
+    line-height: 140%;
+    color: rgb(141, 136, 136);
+}
+
+#resultado {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    color: beige;
+    font-size: 36px;
+    line-height: 140%;
+}
+
+#resultado i {
+    font-size: 32px;
+    color: rgb(141, 136, 136);
+}
+
+#teclado {
+    margin-top: 26px;
+    margin-inline: 32px;
+    padding-bottom: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    border: 0;
+    width: 64px;
+    height: 64px;
+
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.5)0%,
+            rgba(255, 255, 255, 0.05)100%),
+        #2d2a37;
+
+    border-radius: 999px;
+
+    font-size: 24px;
+    line-height: 28px;
+    color: beige;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primeiro {
+    color: blueviolet;
+
+}
+
+.segundo {
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.5)0%,
+            rgba(255, 255, 255, 0.05)100%),
+        #462878;
+}
+
+.terceiro {
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.15) 0%,
+            rgba(255, 255, 255, 0.05)100%),
+        #7F45E2;
+}
